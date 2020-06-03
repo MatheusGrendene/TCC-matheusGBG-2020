@@ -70,7 +70,7 @@ class SceneMain extends Phaser.Scene {
         this.torp=this.physics.add.sprite(this.submarine.x,this.submarine.y,'torp')
         Align.scaleToGameW(this.torp,.01);
         
-        this.torp.body.setVelocity(directionObj.tx*100,directionObj.ty*100);
+        this.torp.body.setVelocity(directionObj.dx*100,directionObj.dy*100);
     }
     //could go into a class//
 
